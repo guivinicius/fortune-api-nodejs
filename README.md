@@ -6,7 +6,7 @@ See the original one built using Ruby and Sinatra at http://github.com/guivinici
 
 ## Runnig the app
 
-It's a Sinatra app so it's pretty simple.
+With NPM it's pretty simple.
 
 ```bash
   cd ~/YOUR_PATH/fortune-api-nodejs/
