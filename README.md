@@ -9,10 +9,10 @@ See the original one built using Ruby and Sinatra at http://github.com/guivinici
 It's a Sinatra app so it's pretty simple.
 
 ```bash
-  cd ~/YOUR_PATH/fortune-api/
-  ruby app.rb
+  cd ~/YOUR_PATH/fortune-api-nodejs/
+  npm start
 ```
-Then go to http://localhost:4567/
+Then go to http://localhost:3000/
 
 ## Installing Fortune
 
