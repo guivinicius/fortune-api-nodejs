@@ -4,5 +4,14 @@
  */
 
 exports.show = function(req, res){
-  res.json({ text: 'this is a fortune!' });
+  var fortune = 'this is a fortune!';
+
+  if (req.params.format === 'json') {
+    res.set('Content-Type', 'application/json');
+    res.json({ text: fortune });
+  } else {
+    res.set('Content-Type', 'text/plain');
+    res.send(fortune);
+  };
+
 };
