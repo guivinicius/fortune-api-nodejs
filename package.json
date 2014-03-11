@@ -11,7 +11,8 @@
   },
   "devDependencies": {
     "nodemon": "x",
-    "jasmine-node": "x"
+    "jasmine-node": "x",
+    "request": "x"
   }
 
 }
