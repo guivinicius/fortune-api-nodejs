@@ -1,17 +1,18 @@
-
-/*
- * GET fortune.
- */
+var fortune = require('../lib/fortune')
 
 exports.show = function(req, res){
-  var fortune = 'this is a fortune!';
+
+  var long  = req.query.long,
+      dirty = req.query.dirty;
+
+  var text = fortune(long, dirty).text();
 
   if (req.params.format === 'json') {
     res.set('Content-Type', 'application/json');
-    res.json({ text: fortune });
+    res.json({ text: text });
   } else {
     res.set('Content-Type', 'text/plain');
-    res.send(fortune);
+    res.send(text);
   };
 
 };
