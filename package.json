@@ -10,7 +10,8 @@
     "ejs": "*"
   },
   "devDependencies": {
-    "nodemon": "x"
+    "nodemon": "x",
+    "jasmine-node": "x"
   }
 
 }
